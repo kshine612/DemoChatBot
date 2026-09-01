@@ -14,8 +14,8 @@ router.post("/", async (req, res) => {
       });
     }
 
-    const result = streamText({
-      model: openai("gpt-5-mini"),
+    const result = await streamText({
+      model: openai("gpt-4-mini"),
 
       system: `
         You are a helpful AI assistant.
